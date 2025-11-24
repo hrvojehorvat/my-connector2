@@ -1,0 +1,16 @@
+{
+  "name": "my-connector2",
+  "key": "my-connector-key",
+  "description": "My Commercetools Connect Connector",
+  "supportedRegions": [
+  "us-central1.gcp",
+  "europe-west1.gcp"
+],
+  "integrationTypes": [
+  "psp",
+  "email"
+],
+  "creator": {
+    "email": "your-email@example.com"
+  }
+}

@@ -1,0 +1,22 @@
+deployAs:
+  - name: processor
+    applicationType: service
+    endpoint: /
+    scripts:
+      postDeploy: npm run connector:build
+    startCommand: npm run connector:start
+    configuration:
+      standardConfiguration:
+        - key: CTP_PROJECT_KEY
+          description: Commercetools project key
+          required: true
+        - key: CTP_CLIENT_ID
+          description: Commercetools client ID
+          required: true
+        - key: CTP_REGION
+          description: Commercetools region
+          required: true
+      securedConfiguration:
+        - key: CTP_CLIENT_SECRET
+          description: Commercetools client secret
+          required: true
