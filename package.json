@@ -1,0 +1,27 @@
+{
+  "name": "my-connector-key",
+  "version": "1.0.0",
+  "description": "My Commercetools Connect Connector",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "echo \"No tests specified\" && exit 0",
+    "connector:build": "npm install && npm run build",
+    "connector:start": "npm run start"
+  },
+  "keywords": ["commercetools", "connect", "connector"],
+  "author": "your-email@example.com",
+  "license": "MIT",
+  "dependencies": {
+    "@commercetools/platform-sdk": "^7.0.0",
+    "@commercetools/sdk-client-v2": "^2.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
